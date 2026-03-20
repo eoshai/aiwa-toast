@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace 'com.aiwa.remote.toast'
     compileSdk 33
     defaultConfig {
         applicationId "com.aiwa.remote.toast"
@@ -15,6 +16,10 @@ android {
         release {
             minifyEnabled false
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
 
