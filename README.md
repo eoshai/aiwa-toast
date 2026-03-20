@@ -15,7 +15,7 @@ O Android TV bloqueia a exibição visual de notificações enviadas pelo shell 
 
 Baixe o APK compilado na aba **Actions** deste repositório:
 
-1. Clique em **Actions** → última build verde
+1. Clique em **Actions** → Update build worflow to Gradle 8.5
 2. Em **Artifacts**, baixe `aiwa-toast`
 3. Extraia o `.zip` — dentro está o `app-debug.apk`
 4. Instale na TV via ADB:
