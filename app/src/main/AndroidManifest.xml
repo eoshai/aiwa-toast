@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aiwa.remote.toast">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:label="AIWA Toast"
+        android:allowBackup="false">
+
+        <receiver
+            android:name=".ToastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.aiwa.SHOW_TOAST"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>
